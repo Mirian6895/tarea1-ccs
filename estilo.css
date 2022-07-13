@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,300;0,800;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,800;1,200&display=swap');
+div {
+padding: 10px 10px 10px 10px;
+}
+body {
+    background-color: grey;
+    margin: top 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 1.5em;
+}
+/*CSS DE MENU DE NAVECACION*/
+
+/*
+ * Navegación
+ */
+ nav {
+	float: justify;
+}
+	nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+    background-color: #333;
+    overflow: hidden;
+	
+	}
+	
+		nav ul li {
+			display: inline-block;
+			line-height: 60px;
+     
+       
+		}
+			
+			nav ul li a {
+				display: block;
+				padding: 100px;
+        color: white;
+				text-decoration: none;
+        padding: 4px 4px 4px 4px;
+			}
+			
+				nav ul li a:hover {
+					background: gray;
+          color: yellow;
+				}
+
+header {
+    background-color: DodgerBlue;
+    color: azure;
+    text-align: right;
+    font-family: 'Albert Sans', sans-serif;
+    height: 175px;
+	 width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+    left: 0; /* Posicionamos la cabecera al lado izquierdo */
+    top: 0; /* Posicionamos la cabecera pegada arriba */
+    position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+    
+}
+
+h1{ font-family: 'Albert Sans', sans-serif;font-size: xx-large;color: white;text-align:right; padding: 10px;font-style: inherit;}
+
+main {
+    font-family: 'Albert Sans', sans-serif;
+    background-color: white;
+    margin-top: 200px;
+    margin-bottom: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius:20px ;
+
+}
+
+section{text-align: justify;margin: 50px; padding-top: 10px;padding-bottom: 10px;}
+
+.parrafo1 {padding-top: 30px;}
+
+p{margin: 0 0 1.5em 0;}
+table {text-align: left;}

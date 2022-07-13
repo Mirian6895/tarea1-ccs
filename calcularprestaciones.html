@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link
+                rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+                integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+                crossorigin="anonymous"
+                referrerpolicy="no-referrer"
+              />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html"fa fa-home"></span>Home</a></li>
+                <li><a href="retenciones.html"><span class="fa-regular fa-closed-captioning"></span>Retenciones</a></li>
+                <li><a href="calcularprestaciones.html"><span class="fa fa-user"></span>Calculadora de Retenciones</a>
+                </li>
+
+            </ul>
+
+        </nav>
+        <br>
+        <h1>Calculadora de prestaciones</h1>
+        <br>
+    </header>
+    <main>
+        <section>
+            
+            <h2 class="h1">El salvador</h2>
+            
+            <article>
+                <p >Mediante del ingreso de salario en este formulario, realizara los calulos de AFP, ISSS e ISR,
+                    Descuento Total y Salario Liquido.</p>
+            </article>
+        </section>
+        <section>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Ingresa tu salario:</td>
+                        <td><input id="salario" name="salario" type="text" placeholder="$0.00 - Vacaciones"></td>
+                        <td><select id="tipo" name="tipo">
+                                <option selected="selected" value="mensual">Mensual</option>
+                                <option value="quincenal">Quincenal</option>
+                                <option value="semanal">Semanal</option>
+                                <option value="vacaciones">Vacaciones</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td class="buttom td"><input name="calcular"
+                                type="button" value="calcular">
+                                <br>
+                            <input  name="borrar"
+                                type="button" value="borrar">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table style="height: 276px;" width="365">
+                <thead>
+                    <tr>
+                        <th>Resultados de Calculos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cálculo de salario:</td>
+                        <td><input name="tipoCalculo" readonly="readonly" type="text" placeholder="$0.00"></td>
+                    </tr>
+                    <tr>
+                        <td>AFP Patronal:</td>
+                        <td><input name="afpPatronal" type="text" placeholder="$0.00"></td>
+                    </tr>
+                    <tr>
+                        <td>ISSS Patronal:</td>
+                        <td><input name="isssPatronal" readonly="readonly" type="text" placeholder="$0.00"></td>
+                    </tr>
+                    <tr>
+                        <td>ISSS Laboral:</td>
+                        <td><input name="isss" readonly="readonly" type="text" placeholder="$0.00"></td>
+                    </tr>
+                    <tr>
+                        <td>AFP Laboral:</td>
+                        <td><input name="afp" readonly="readonly" type="text" placeholder="$0.00"></td>
+                    </tr>
+                    <tr>
+                        <td>Salario(-)AFP:</td>
+                        <td><input name="salario-afp" readonly="readonly" type="text" placeholder="$0.00"></td>
+                    </tr>
+                    <tr>
+                        <td>Descuento total:</td>
+                        <td><input name="descuentoT" readonly="readonly" type="text" placeholder="$0.00"></td>
+                    </tr>
+                    <tr style="display: table-row;">
+                        <td>Vacaciones:</td>
+                        <td><input name="vacaciones" readonly="readonly" type="text" placeholder="$0.00"></td>
+                    </tr>
+                    <tr>
+                        <td>Impuesto sobre la Renta:</td>
+                        <td><input name="renta" readonly="readonly" type="text" placeholder="$0.00"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Salario Líquido:</p>
+                        </td>
+                        <td><input id="salarioNeto" class="input-borderless" name="salarioNeto" readonly="readonly"
+                                type="text" placeholder="$0.00"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+    </main>
+    <footer>
+        <h3>Calculadora de prestaciones</h3>
+    </footer>
+</body>
+
+</html>
